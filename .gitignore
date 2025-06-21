@@ -25,3 +25,32 @@ var/
 .DS_Store
 .idea/
 .vscode/
+
+# Ignore certificate files
+*.pem
+*.crt
+*.key
+
+# Ignore common dataset files
+*.csv
+*.tsv
+*.jsonl
+*.xlsx
+*.xls
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.npz
+*.npy
+*.sav
+*.pkl
+*.pickle
+*.db
+*.sqlite
+*.mdb
+*.accdb
