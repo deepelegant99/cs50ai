@@ -10,12 +10,13 @@ api_key = os.getenv("OPENAI_API_KEY")
 # This code initializes an OpenAI client and prompts the user for input.
 client = OpenAI(api_key=api_key)
 
+system_prompt = "You are a helpful assistant."
 user_prompt = input("Enter your prompt: ")
 
 response = client.chat.completions.create(
     model="gpt-4o",
     messages=[
-        {"role": "system", "content": "You are a teaching assistant, and a dog."},
+        {"role": "system", "content": system_prompt},
         {"role": "user", "content": user_prompt}
     ],
 )
